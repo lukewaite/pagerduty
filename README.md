@@ -3,12 +3,12 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/lukewaite/pagerduty.svg?style=flat-square)](https://packagist.org/packages/lukewaite/pagerduty)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Build Status](https://img.shields.io/travis/lukewaite/pagerduty/master.svg?style=flat-square)](https://travis-ci.org/lukewaite/pagerduty)
-<!-- [![StyleCI](https://styleci.io/repos/:style_ci_id/shield)](https://styleci.io/repos/:style_ci_id) -->
+[![StyleCI](https://styleci.io/repos/91087655/shield)](https://styleci.io/repos/91087655)
 [![Quality Score](https://img.shields.io/scrutinizer/g/lukewaite/pagerduty.svg?style=flat-square)](https://scrutinizer-ci.com/g/lukewaite/pagerduty)
 [![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/lukewaite/pagerduty/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/lukewaite/pagerduty/?branch=master)
 [![Total Downloads](https://img.shields.io/packagist/dt/lukewaite/pagerduty.svg?style=flat-square)](https://packagist.org/packages/lukewaite/pagerduty)
 
-This package makes it easy to send notification events to [PagerDuty](https://www.pagerduty.com)'s [v2 Events API.
+This package makes it easy to send notification events to [PagerDuty](https://www.pagerduty.com)'s [v2 Events API](https://v2.developer.pagerduty.com/docs/send-an-event-events-api-v2).
 
 ## Contents
 
