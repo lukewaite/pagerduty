@@ -1,4 +1,4 @@
-# PagerDuty Event notifications channel for Laravel 5.3
+# PagerDuty v2 Events API Wrapper Class
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/lukewaite/pagerduty.svg?style=flat-square)](https://packagist.org/packages/lukewaite/pagerduty)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)

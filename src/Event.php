@@ -103,6 +103,16 @@ class Event
         return $this;
     }
 
+    public function addLink()
+    {
+        // TODO: Implement addLink
+    }
+
+    public function addImage()
+    {
+        // TODO: Implement addImage
+    }
+
     protected function setPayload($key, $value)
     {
         $this->event["payload"][$key] = $value;
