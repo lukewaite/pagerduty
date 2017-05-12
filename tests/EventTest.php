@@ -103,6 +103,4 @@ class EventTest extends TestCase
     {
         $this->markTestIncomplete();
     }
-
-
 }

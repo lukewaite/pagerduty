@@ -8,7 +8,7 @@
 [![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/lukewaite/pagerduty/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/lukewaite/pagerduty/?branch=master)
 [![Total Downloads](https://img.shields.io/packagist/dt/lukewaite/pagerduty.svg?style=flat-square)](https://packagist.org/packages/lukewaite/pagerduty)
 
-This package makes it easy to send notification events to [PagerDuty](https://www.pagerduty.com)'s [v2 Events API](https://v2.developer.pagerduty.com/docs/send-an-event-events-api-v2).
+This package makes it easy to send notification events to [PagerDuty](https://www.pagerduty.com)'s [v2 Events API][link-pagerduty-v2-api].
 
 ## Contents
 
@@ -38,11 +38,11 @@ composer require lukewaite/pagerduty
 TODO: Implement usage documentation
 
 ### PagerDuty Setup
-On a PagerDuty Service of your choice, create a new Integration using the `Events API v2`.
+On a PagerDuty Service of your choice, create a new Integration using the [`Events API v2`][link-pagerduty-v2-api].
 
 ![Creating a new integration](doc/CreateNewIntegration.png)
 
-The `Integration Key` listed for your new integration is what you need to set in the `routeNotificationForPagerDuty()` method.
+The `Integration Key` listed for your new integration is what you need to set in the `setRoutingKey()` method.
 
 ![List of Integrations with Keys](doc/ListIntegrations.png)
 
@@ -50,7 +50,7 @@ The `Integration Key` listed for your new integration is what you need to set in
 
 TODO: Update available methods documentation.
 
-See the [PagerDuty v2 Events API documentation](https://v2.developer.pagerduty.com/docs/send-an-event-events-api-v2)
+See the [PagerDuty v2 Events API documentation][[link-pagerduty-v2-api]]
 for more information about what these options will do.
 
 ## Changelog
@@ -79,3 +79,5 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+[link-pagerduty-v2-api]: https://v2.developer.pagerduty.com/docs/send-an-event-events-api-v2
