@@ -11,7 +11,6 @@
 
 namespace LukeWaite\PagerDuty;
 
-
 class Event
 {
     protected $event;

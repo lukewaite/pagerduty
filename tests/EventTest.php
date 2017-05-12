@@ -5,7 +5,8 @@ use LukeWaite\PagerDuty\Event;
 class EventTest extends PHPUnit_Framework_TestCase
 {
     /** @test */
-    public function it_should_construct_with_defaults() {
+    public function it_should_construct_with_defaults()
+    {
         $event = new Event();
         $this->assertArrayHasKey('source', $event->toArray()['payload']);
         $this->assertTrue(is_string($event->toArray()['payload']['source']));
@@ -13,13 +14,15 @@ class EventTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_should_construct_allowing_override() {
+    public function it_should_construct_allowing_override()
+    {
         $event = new Event(['payload'=>['source' => 'testEventSource']]);
         $this->assertEquals(['payload'=>['severity'=>'critical', 'source'=>'testEventSource']], $event->toArray());
     }
 
     /** @test */
-    public function it_should_allow_complex_overrides() {
+    public function it_should_allow_complex_overrides()
+    {
         $event = new Event([
             'routing_key' => 'testRoutingKey',
             'payload' => [
@@ -47,7 +50,8 @@ class EventTest extends PHPUnit_Framework_TestCase
     }
 
     /** @test */
-    public function it_should_allow_chaining() {
+    public function it_should_allow_chaining()
+    {
         $event = new Event();
         $arr = $event->setRoutingKey('testRoutingKey')
             ->setSource('hostname')
