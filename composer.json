@@ -1,0 +1,38 @@
+{
+    "name": "lukewaite/pagerduty",
+    "description": "Library for interacting with the PagerDuty Events API v2",
+    "homepage": "https://github.com/lukewaite/pagerduty",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luke Waite",
+            "email": "lwaite@gmail.com",
+            "homepage": "https://lukewaite.ca",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9.9",
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "LukeWaite\\PagerDuty\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LukeWaite\\PagerDuty\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
