@@ -16,8 +16,9 @@ class EventTest extends PHPUnit_Framework_TestCase
     /** @test */
     public function it_should_construct_allowing_override()
     {
-        $event = new Event(['payload'=>['source' => 'testEventSource']]);
-        $this->assertEquals(['payload'=>['severity'=>'critical', 'source'=>'testEventSource']], $event->toArray());
+        $event = new Event(['payload' => ['source' => 'testEventSource']]);
+        $this->assertEquals(['payload' => ['severity' => 'critical', 'source' => 'testEventSource']],
+            $event->toArray());
     }
 
     /** @test */
@@ -52,8 +53,8 @@ class EventTest extends PHPUnit_Framework_TestCase
     /** @test */
     public function it_should_allow_chaining()
     {
-        $event = new Event();
-        $arr = $event->setRoutingKey('testRoutingKey')
+        $event = Event::create()
+            ->setRoutingKey('testRoutingKey')
             ->setSource('hostname')
             ->setSeverity('info')
             ->setClass('application')
@@ -82,6 +83,6 @@ class EventTest extends PHPUnit_Framework_TestCase
                     'custom2' => 'val2'
                 ]
             ]
-        ], $arr);
+        ], $event);
     }
 }

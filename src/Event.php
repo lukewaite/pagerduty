@@ -15,6 +15,11 @@ class Event
 {
     protected $event;
 
+    public static function create($event = [])
+    {
+        return new static($event);
+    }
+
     public function __construct($event = [])
     {
         foreach (array_keys($event) as $key) {
