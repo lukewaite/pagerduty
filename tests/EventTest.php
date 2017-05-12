@@ -1,8 +1,11 @@
 <?php
 
-use LukeWaite\PagerDuty\Event;
+namespace LukeWaite\PagerDuty\Tests;
 
-class EventTest extends PHPUnit_Framework_TestCase
+use LukeWaite\PagerDuty\Event;
+use PHPUnit\Framework\TestCase;
+
+class EventTest extends TestCase
 {
     /** @test */
     public function it_should_construct_with_defaults()
@@ -85,4 +88,21 @@ class EventTest extends PHPUnit_Framework_TestCase
             ]
         ], $event);
     }
+
+    /** @test */
+    public function it_should_return_dedup_key()
+    {
+        $event = Event::create()
+            ->setDedupKey('deduplication key');
+
+        $this->assertEquals('deduplication key', $event->getDedupeKey());
+    }
+
+    /** @test */
+    public function it_should_convert_to_json()
+    {
+        $this->markTestIncomplete();
+    }
+
+
 }

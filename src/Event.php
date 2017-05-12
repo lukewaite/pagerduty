@@ -66,6 +66,11 @@ class Event
         return $this->setMeta('dedup_key', $key);
     }
 
+    public function getDedupeKey()
+    {
+        return $this->event["dedup_key"];
+    }
+
     public function setSummary($value)
     {
         return $this->setPayload('summary', $value);
