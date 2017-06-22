@@ -1,3 +1,7 @@
+# WIP
+This project is a WIP and not currently functional.
+
+
 # PagerDuty v2 Events API Wrapper Class
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/lukewaite/pagerduty.svg?style=flat-square)](https://packagist.org/packages/lukewaite/pagerduty)
